@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Чат</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="s-header">
+        <nav class="header-nav-wrap">
+            <a href="MainPage.html">
+                <img class="header-logo" src="logoname.png" alt="Logo">
+            </a>
+            <ul class="header-main-nav">
+                <li class="header-main-nav">
+                    <a href="PA.html">
+                        <button class="header-button">Личный кабинет</button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="dialogWindow">
+        <div class="dialog contain" id="myDialog1">
+            <div class="chat">
+                <div class="chat-messages">
+                    <div class="message received">
+                        <p>Hello!</p>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Type your message...">
+                    <button onclick="sendMessage1()">Send</button>
+                </div>
+            </div>
+        </div>        
+        <div class="dialog contain" id="myDialog2">
+            <div class="chat">
+                <div class="chat-messages">
+                    <div class="message received">
+                        <p>Hello!</p>
+                    </div>
+                    <div class="message sent">
+                        <p>Hi there!</p>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Type your message...">
+                    <button onclick="sendMessage2()">Send</button>
+                </div>
+            </div>
+        </div>
+        <div class="dialog contain" id="myDialog3">
+            <div class="chat">
+                <div class="chat-messages">
+                    <div class="message received">
+                        <p>Hello!</p>
+                    </div>
+                    <div class="message sent">
+                        <p>Hi th!</p>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Type your message...">
+                    <button onclick="sendMessage3()">Send</button>
+                </div>
+            </div>
+        </div>
+        <div class="dialog contain" id="myDialog4">
+            <div class="chat">
+                <div class="chat-messages">
+                    <div class="message received">
+                        <p>Hello!</p>
+                    </div>
+                    <div class="message sent">
+                        <p>Hi the!</p>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Type your message...">
+                    <button onclick="sendMessage4()">Send</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="button-group" style="top: 30%;">
+        <button class="button" onclick="showDialog('myDialog1'); hideDialog('myDialog2'); hideDialog('myDialog3'); hideDialog('myDialog4')">Тест чат 1</button>
+    </div>
+    <div class="button-group" style="top: 40%;">
+        <button class="button" onclick="showDialog('myDialog2'); hideDialog('myDialog1'); hideDialog('myDialog3'); hideDialog('myDialog4')">Тест чат 2</button>
+    </div>
+    <div class="button-group" style="top: 50%;">
+        <button class="button" onclick="showDialog('myDialog3'); hideDialog('myDialog1'); hideDialog('myDialog2'); hideDialog('myDialog4')">Тест чат 3</button>
+    </div>
+    <div class="button-group" style="top: 60%;">
+        <button class="button" onclick="showDialog('myDialog4'); hideDialog('myDialog1'); hideDialog('myDialog2'); hideDialog('myDialog3')">Тест чат 4</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

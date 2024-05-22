@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Личный кабинет</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="logo/logo.png" type="image/x-icon">
+</head>
+
+<body>
+  <header class="s-header">
+    <nav class="header-nav-wrap">
+      <a href="MainPage.html">
+        <img class="header-logo" src="logo/logoname.png" alt="Logo">
+      </a>
+    </nav>
+  </header>
+
+  <div class="containeer">
+    <div class="left-div">
+      <h1 style="color: #005691;">
+        <center>Личная информация</center>
+      </h1>
+      <center>
+        <img src="icons/pfp.jpeg" alt="Фото профиля">
+      </center>
+
+      <div id="text-container1">
+        <span style="color: #005691; font-size: 25px; font-weight: bold;">Имя</span>
+        <button class="changebutton" id="edit-btn1" onclick="editText('text-content1', 'edit-btn1')">✎</button>
+        <p id="text-content1" style="font-size: 20px;">Светлана Лойка</p>
+        <hr style="border: 1px solid #AFD3E2;">
+      </div>
+
+      <div id="text-container2">
+        <span style="color: #005691; font-size: 25px; font-weight: bold;">Почта</span>
+        <button class="changebutton" id="edit-btn2" onclick="editText('text-content2', 'edit-btn2')">✎</button>
+        <p id="text-content2" style="font-size: 20px;">imyaibragimvamochemnibydgovolit@gmail.com</p>
+        <hr style="border: 1px solid #AFD3E2;">
+      </div>
+
+      <div id="text-container3">
+        <span style="color: #005691; font-size: 25px; font-weight: bold;">Телефон</span>
+        <button class="changebutton" id="edit-btn3" onclick="editText('text-content3', 'edit-btn3')">✎</button>
+        <p id="text-content3" style="font-size: 20px;">8 800 555 35 35</p>
+      </div>
+      <br>
+    </div>
+
+    <div class="right-divs">
+      <div class="top-div">
+        <h1 style="color: #005691;">
+          <center>Последние пожертвования:</center>
+        </h1>
+        <ul>
+          <span style="color: #005691; font-size: 20px;">Анна С.</span>
+          <span style="font-size: 20px;"> - 7 000 тг</span>
+          <br>
+          <span style="color: #005691; font-size: 20px;">Кирилл М.</span>
+          <span style="font-size: 20px;"> - 10 000 тг</span>
+          <br>
+          <span style="color: #005691; font-size: 20px;">Султан Д.</span>
+          <span style="font-size: 20px;"> - 10 000 тг</span>
+          <br>
+          <span style="color: #005691; font-size: 20px;">Рауан И.</span>
+          <span style="font-size: 20px;"> - 12 000 тг</span>
+        </ul>
+      </div>
+      <div class="bottom-div">
+        <h1 style="color: #005691;">
+          <center>Детский Дом</center>
+        </h1>
+        <ul>
+            <p style="font-size: 20px;"> Детский Дом "Солнышко"</p>
+            <p style="font-size: 20px;">Алматинская обл., ул. Ереванская, 35а</p>
+        </ul>
+        <br>
+        <center>
+          <button id="popupButton" class="header-button" onclick="togglePopup()">Изменить информацию</button>
+        </center>
+      </div>
+    </div>
+  </div>
+  
+  <a href="chat.html" style="text-decoration: none; color: white;">
+    <button style="position: relative; margin-left: 90%;" class="header-button">
+      Чаты
+    </button>
+  </a>
+  <br><br>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" id="closeButton" onclick="togglePopup()">&times;</span>
+      <br>
+      <br>
+      <div id="text-container4">
+        <span style="color: #000000; font-size: 25px; font-weight: bold;">Основная Информация</span>
+        <button class="changebutton" id="edit-btn4" onclick="editText('text-content4', 'edit-btn4')">✎</button>
+        <p id="text-content4" style="font-size: 17px; text-align: left;" >Частное учреждение «Детский дом «Солнышко» было создано при благотворительном корпоративном фонде
+          «Радонеж» 22 апреля 2014 года. Детский дом был создан для того, чтобы сохранить детей, которые жили в
+          приюте при Свято-Сергиевском приходе. Создание детского приюта началось ещё в тяжелые девяностые годы и
+          в 2012 году было закончено строительство нового здания для детей.</p>
+      </div>
+      <div class="needs">
+        <span style="color: #000000; font-size: 25px; font-weight: bold;">Наши нужды</span>         
+        <button class="edit-button" onclick="editNeeds()" style="display: inline-block;">✎</button>
+        <button class="save-button" onclick="saveNeeds()" style="display: none;">✓</button>
+        <ul class="needs-list" id="needs-list" style="text-align: left;">
+          <li><input type="checkbox" id="financial-help" disabled=""> Финансовая Помощь</li>
+          <li><input type="checkbox" id="food" disabled=""> Продукты Питания</li>
+          <li><input type="checkbox" id="clothing" disabled=""> Одежда</li>
+          <li><input type="checkbox" id="toys" disabled=""> Игрушки и Подарки</li>
+          <li><input type="checkbox" id="volunteer" disabled=""> Волонтерская Помощь</li>
+          <li><input type="checkbox" id="repair" disabled=""> Ремонт</li>
+          <li><input type="checkbox" id="household-goods" disabled=""> Товары Для Быта</li>
+          <li><input type="checkbox" id="furniture" disabled=""> Мебель</li>
+        </ul>
+        <p style="color: grey;">* Для изменения важной информации, обратитесь к администрации по почтовому адресу hehehe@gmail.com</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="script.js">
+  </script>
+</body>
+
+</html>

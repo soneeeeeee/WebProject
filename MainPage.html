@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Главная</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/png" href="logo/logo.png" />
+</head>
+
+<body>
+  <header class="s-header">
+    <nav class="header-nav-wrap">
+      <img class="header-logo" src="logo/logoname.png" alt="Logo">
+      <ul class="header-main-nav">
+        <li class="header-main-nav">
+          <a href="PAM.html">
+            <button class="header-button">Личный кабинет</button>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div id="mySidebar" class="sidebar">
+    <div class="search-container">
+      <input type="text" id="searchInput" class="search-input" placeholder="Введите...">
+      <button onclick="searchText()" class="header-button">Поиск</button>
+    </div>
+    <a id="closebtn" class="closebtn" onclick="hide()">×</a>
+    <span style="float: right; margin-right: 5px;" >
+      <a>
+        <button class="filter" onclick="undoFilter()">Очистить</button>
+        </a>
+      </span>
+    <a href="#" onclick="searchByWord('Финансовая Помощь')">
+      <button class="filter" style="font-size: 17px;">
+      Финансовая Помощь
+      </button>
+    </a>
+    <a href="#" onclick="searchByWord('Продукты Питания')">
+      <button class="filter" style="font-size: 17px;">
+      Продукты Питания
+      </button>
+    </a>
+    <a href="#" onclick="searchByWord('Одежда')">
+      <button class="filter" style="font-size: 17px;">
+        Одежда
+      </button>
+    </a>
+    <a href="#" onclick="searchByWord('Игрушки и Подарки')">
+      <button class="filter" style="font-size: 17px;"> 
+        Игрушки и Подарки
+      </button>
+    </a>
+    <a href="#" onclick="searchByWord('Волонтерская Помощь')">
+      <button class="filter" style="font-size: 17px;">
+        Волонтерская Помощь
+      </button>
+    </a>
+    <a href="#" onclick="searchByWord('Ремонт')">
+      <button class="filter" style="font-size: 17px;">
+        Ремонт
+      </button>
+    </a>
+    <a href="#" onclick="searchByWord('Товары Для Быта')">
+      <button class="filter" style="font-size: 17px;">
+        Товары Для Быта
+      </button>
+    </a>
+    <a href="#" onclick="searchByWord('Мебель')">
+      <button class="filter" style="font-size: 17px;">
+        Мебель
+      </button>
+    </a>
+  </div>
+  <br><br>
+  <button class="openbtn btnskr" id="openbtn" onclick="show()">☰</button>
+  <div id="content">
+    <br>
+    <br>
+    <br>
+    <center>
+      <button id="popupButton" class="header-button">
+        Пожертвовать
+    </button>
+    <button id="popupButton2" class="header-button">
+        Активировать подписку
+    </button>
+    </center>
+    <ul id="myMenu">
+    <br>
+      <div class="grid-container">
+        <a href="solnyshko.html">
+        <div class="searchable container">
+          <img class="stacked-image" src="photo/1.jpg" alt="Logo">
+          <div class="stacked-element">
+            <h3 class="container-text">Детский Дом "Солнышко"</h3>
+            <p class="container-text">Алматинская обл., ул. Ереванская, 35а</p>
+            <p class="container-text">Мебель, Продукты Питания, Одежда</p>
+          </div>
+        </div>
+        </a>
+        
+        <a href="solnyshko.html">
+        <div class="searchable container">
+          <img class="stacked-image" src="icons/placeholder.png" alt="Logo">
+          <div class=" stacked-element">
+            <h3 class="container-text">Детский Дом "Асем"</h3>
+            <p class="container-text">г. Караганда, ул. Чехова, дом 8</p>
+            <p class="container-text">Ремонт, Одежда, Игрушки и Подарки</p>
+          </div>
+        </div>
+        </a>
+
+        <a href="solnyshko.html">
+        <div class="searchable container">
+          <img class="stacked-image" src="icons/placeholder.png" alt="Logo">
+          <div class=" stacked-element">
+            <h3 class="container-text">Детский Дом "Жанұя"</h3>
+            <p class="container-text">г. Алматы, ул.Бегалина, 82</p>
+            <p class="container-text">Волонтерская помощь</p>
+          </div>
+        </div>
+        </a>
+
+        <a href="solnyshko.html">
+        <div class="searchable container">
+          <img class="stacked-image" src="icons/placeholder.png" alt="Logo">
+          <div class=" stacked-element">
+            <h3 class="container-text">	Дом юношества г. Шымкент</h3>
+            <p class="container-text">г. Шымкент, ул. Байтурсынова, 73а</p>
+            <p class="container-text">Товары Для Быта</p>
+          </div>
+        </div>
+        </a>
+
+        <a href="solnyshko.html">
+        <div class="searchable container">
+          <img class="stacked-image" src="icons/placeholder.png" alt="Logo">
+          <div class=" stacked-element">
+            <h3 class="container-text">Детский дом № 3 г. Шымкент</h3>
+            <p class="container-text">г. Шымкент, ул. Мамин-Сибиряк</p>
+            <p class="container-text">Мебель</p>
+          </div>
+        </div>
+        </a>
+
+        <a href="solnyshko.html">
+        <div class="searchable container">
+          <img class="stacked-image" src="icons/placeholder.png" alt="Logo">
+          <div class=" stacked-element">
+            <h3 class="container-text">SOS Детская деревня г. Алматы</h3>
+            <p class="container-text">г. Алматы, ул. Луганского, 95</p>
+            <p class="container-text">Продукты Питания</p>
+          </div>
+        </div>
+        </a>
+    </ul>
+  </div>
+  <br><br><br>
+  <a href="chat.html" style="text-decoration: none; color: white;">
+    <button style="position: relative; margin-left: 90%;" class="header-button">
+      Чаты
+    </button>
+  </a>
+<div id="popup" class="popup">
+  <div class="popup-content defdiv donation-form" style="font-size: larger;">
+      <span class="close" id="closeButton">&times;</span>
+      <br>
+          <h2>Пожертвование для детских домов</h2>
+          <form action="#">
+              <label for="children_home">Выберите детский дом:</label>
+              <br>
+              <select id="children_home" name="children_home">
+                  <option value="home1">Детский дом "Солнышко"</option>
+                  <option value="home2">Детский дом "Асем"</option>
+                  <option value="home3">Детский дом "Жанұя"</option>
+                  <option value="home1">Дом юношества г.Шымкент </option>
+                  <option value="home2">Детский дом №3 г.Шымкент</option>
+                  <option value="home3">SOS Детская деревня г. Алматы</option>
+              </select>
+              <br>
+              <label for="donation_amount">Введите сумму пожертвования (KZT):</label>
+              <input type="number" id="donation_amount" name="donation_amount" min="0" step="100">
+              <br>
+              <center><button class="header-button" type="submit">Пожертвовать</button></center>
+          </form>
+  </div>
+</div>
+
+<div id="popup2" class="popup" style="font-size: larger;">
+  <div class="popup-content defdiv donation-form">
+      <span class="close" id="closeButton2">&times;</span>
+      <br>
+          <h2>Ежемесячная подписка на пожертвования</h2>
+          <form action="#">
+              <label for="children_home">Выберите детский(е) дом(а):</label>
+              <br><br>
+                  <form>
+                      <input id="html1" type="checkbox">
+                      <label for="html1">Детский дом "Солнышко"</label>
+                    </form>
+                    <form>
+                      <input id="html1" type="checkbox">
+                      <label for="html1">Детский дом "Асем"</label>
+                    </form>
+                    <form>
+                      <input id="html1" type="checkbox">
+                      <label for="html1">Детский дом "Жанұя"</label>
+                    </form>
+                    <form>
+                      <input id="html1" type="checkbox">
+                      <label for="html1">Дом юношества г.Шымкент</label>
+                    </form>
+                    <form>
+                      <input id="html1" type="checkbox">
+                      <label for="html1">Детский дом №3 г.Шымкент</label>
+                    </form>
+                    <form>
+                      <input id="html1" type="checkbox">
+                      <label for="html1">SOS Детская деревня г.Алматы</label>
+                    </form>
+                    <br>
+              <label for="donation_amount">Введите сумму пожертвования (KZT):</label>
+              <br>
+              <center>
+              <input type="number" id="donation_amount" name="donation_amount" min="0" step="100">
+              </center>
+              <label for="donation_amount">Введите длительность (месяцы):</label>
+              <br>
+              <center>
+              <input type="number" id="donation_amount" name="donation_amount" min="0" step="1" max="12">
+              </center>
+              <center><button class="header-button" type="submit">Активировать подписку</button></center>
+          </form>
+      </div>
+</div>
+  <script src="script.js"></script>
+</body>
+
+</html>

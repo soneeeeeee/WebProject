@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Детский дом «Солнышко»</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="logo/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="s-header">
+        <nav class="header-nav-wrap">
+            <a  href="MainPage.html">
+                <img class="header-logo" src="logo/logoname.png" alt="Logo">
+              </a>
+            <ul class="header-main-nav">
+                <li>
+                    <a href="PA.html">
+                        <button class="header-button">Личный кабинет</button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="pagecontent">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Детский дом «Солнышко»</h1>
+                <button id="popupButton" class="header-button">
+                    Пожертвовать
+                </button>
+                <button id="popupButton2" class="header-button">
+                    Активировать подписку
+                </button>
+            </div>
+        </section>
+        <br>
+        <section class="info-section">
+            <center><h2>О Детском Доме</h2></center>
+            <div class="left right">
+            <p style="font-size: x-large;">Частное учреждение «Детский дом «Солнышко» было создано при благотворительном корпоративном фонде
+                «Радонеж» 22 апреля 2014 года. Детский дом был создан для того, чтобы сохранить детей, которые жили в
+                приюте при Свято-Сергиевском приходе. Создание детского приюта началось ещё в тяжелые девяностые годы и
+                в 2012 году было закончено строительство нового здания для детей.</p>
+            </div>
+        </section>
+
+        <div class="two-divs">
+            <div class="div-left left">
+                <h2>Необходимы:</h2>
+                <ul style="font-size: larger;">
+                    <li>Мебель</li>
+                    <li>Продукты Питания</li>
+                    <li>Одежда</li>
+                    <li>Товары для быта</li>
+                </ul>
+            </div>
+            <div class="div-right right">
+                <h2>Потрачено:</h2>
+                <a style="font-size: larger;">Пожертвовано: 1 200 000 тг</a>
+                <ul style="font-size: larger;">
+                    <li>Мебель: 230 000 тг</li>
+                    <li>Продукты Питания: 120 000 тг</li>
+                    <li>Одежда: 150 000 тг</li>
+                    <li>Товары для быта: 90 000 тг</li>
+                </ul>
+            </div>
+        </div>
+        <section class="contact-section">
+            <h2>Контакты</h2>
+                <div class="contacts">
+                    <div class="column">
+                        <div class="contline">
+                            <img src="icons/phone.png" alt="Phone Icon">
+                            <p style="font-size: larger;">+7 701 255 40 05</p>
+                        </div>
+            
+                        <div class="contline">
+                            <img src="icons/mail.png" alt="Email Icon">
+                            <p style="font-size: larger;">detdomsolnishcko@mail.ru</p>
+                        </div>
+                        <div class="contline">
+                            <img src="icons/instagram.png" alt="Instagram Icon">
+                            <a href="https://www.instagram.com/det_dom_solnishcko/">
+                                <p style="font-size: larger;">@det_dom_solnishcko</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="contline">
+                            <img src="icons/facebook.png" alt="Facebook Icon">
+                            <a href="https://www.facebook.com/domsolnyshko.kz">
+                                <p style="font-size: larger;">domsolnyshko.kz</p>
+                            </a>
+                        </div>
+                        <div class="contline">
+                            <img src="icons/web.png" alt="Website Icon">
+                            <a href="https://domsolnyshko.kz">
+                                <p style="font-size: larger;">www.domsolnyshko.kz</p>
+                            </a>
+                        </div>
+                        <div class="contline">
+                            <img src="icons/address.png" alt="Address Icon">
+                            <a href="https://2gis.kz/almaty/firm/70000001026627895">
+                                <p style="font-size: larger;">Алматинская обл., ул. Ереванская, 35а</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
+
+
+    <div id="popup" class="popup">
+        <div class="popup-content defdiv donation-form" style="font-size: larger;">
+            <span class="close" id="closeButton">&times;</span>
+            <br>
+                <h2>Пожертвование для детских домов</h2>
+                <form action="#">
+                    <label for="children_home">Выберите детский дом:</label>
+                    <br>
+                    <select id="children_home" name="children_home">
+                        <option value="home1">Детский дом "Солнышко"</option>
+                        <option value="home2">Детский дом "Асем"</option>
+                        <option value="home3">Детский дом "Жанұя"</option>
+                        <option value="home1">Дом юношества г.Шымкент </option>
+                        <option value="home2">Детский дом №3 г.Шымкент</option>
+                        <option value="home3">SOS Детская деревня г. Алматы</option>
+                    </select>
+                    <br>
+                    <label for="donation_amount">Введите сумму пожертвования (KZT):</label>
+                    <input type="number" id="donation_amount" name="donation_amount" min="0" step="100">
+                    <br>
+                    <center><button class="header-button" type="submit">Пожертвовать</button></center>
+                </form>
+        </div>
+    </div>
+
+    <div id="popup2" class="popup" style="font-size: larger;">
+        <div class="popup-content defdiv donation-form">
+            <span class="close" id="closeButton2">&times;</span>
+            <br>
+                <h2>Ежемесячная подписка на пожертвования</h2>
+                <form action="#">
+                    <label for="children_home">Выберите детский(е) дом(а):</label>
+                    <br><br>
+                        <form>
+                            <input id="html1" type="checkbox">
+                            <label for="html1">Детский дом "Солнышко"</label>
+                          </form>
+                          <form>
+                            <input id="html1" type="checkbox">
+                            <label for="html1">Детский дом "Асем"</label>
+                          </form>
+                          <form>
+                            <input id="html1" type="checkbox">
+                            <label for="html1">Детский дом "Жанұя"</label>
+                          </form>
+                          <form>
+                            <input id="html1" type="checkbox">
+                            <label for="html1">Дом юношества г.Шымкент</label>
+                          </form>
+                          <form>
+                            <input id="html1" type="checkbox">
+                            <label for="html1">Детский дом №3 г.Шымкент</label>
+                          </form>
+                          <form>
+                            <input id="html1" type="checkbox">
+                            <label for="html1">SOS Детская деревня г.Алматы</label>
+                          </form>
+                          <br>
+                    <label for="donation_amount">Введите сумму пожертвования (KZT):</label>
+                    <br>
+                    <center>
+                    <input type="number" id="donation_amount" name="donation_amount" min="0" step="100">
+                    </center>
+                    <label for="donation_amount">Введите длительность (месяцы):</label>
+                    <br>
+                    <center>
+                    <input type="number" id="donation_amount" name="donation_amount" min="0" step="1" max="12">
+                    </center>
+                    <center><button class="header-button" type="submit">Активировать подписку</button></center>
+                </form>
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

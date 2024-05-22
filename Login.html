@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>Регистрация</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2022.7">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/png" href="logo.png" />
+</head>
+
+<body>
+  <header class="s-header">
+    <nav class="header-nav-wrap">
+      <ul class="header-main-nav">
+      </ul>
+    </nav>
+  </header>
+  <div class="defdiv">
+    <center>
+      <br>
+      <h2>Форма Регистрации</h2>
+      <form action="#" method="post" onsubmit="return showConfirmation()">
+        <label>Тип пользователя:</label><br>
+        <button class="header-button" type="button" onclick="selectUser()">Пользователь</button>
+        <button class="header-button" type="button" onclick="selectModerator()">Модератор</button><br><br>
+
+        <label for="first_name">Имя: *</label><br>
+        <input type="text" id="first_name" name="first_name" required placeholder="Имя"><br><br>
+
+        <label for="last_name">Фамилия: *</label><br>
+        <input type="text" id="last_name" name="last_name" required placeholder="Фамилия"><br><br>
+
+        <label for="email">Электронная почта:</label><br>
+        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required placeholder="example@mail.com"><br><br>
+
+        <label for="phone">Телефон: *</label><br>
+        <input type="text" id="phone" name="phone" pattern="^\+7\(\d{3}\)\d{3}-\d{2}-\d{2}$" required placeholder="+7(XXX)XXX-XX-XX"><br><br>
+
+        <input type="hidden" id="user_type" name="user_type">
+
+        <div id="moderator_fields" style="display: none;">
+          <label for="iin">ИИН: *</label><br>
+          <input type="text" id="iin" name="iin" pattern="[0-9]{12}" placeholder="ИИН"><br><br>
+        </div>
+
+        <button class="header-button" type="submit">Зарегистрироваться</button>
+      </form>
+      <br>
+    </center>
+  </div>
+
+  <div class="overlay" id="overlay">
+    <div class="modal">
+      <h2>Ваша заявка была принята</h2>
+      <p>Мы рассмотрим вашу заявку в ближайшее время. </p>
+      <p>Ответ придет на Вашу электронную почту в течение 3 рабочих дней. </p>
+      <p>Спасибо!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

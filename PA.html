@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Личный кабинет</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="logo/logo.png" type="image/x-icon">
+</head>
+
+<body>
+  <header class="s-header">
+    <nav class="header-nav-wrap">
+      <a href="MainPage.html">
+        <img class="header-logo" src="logo/logoname.png" alt="Logo">
+      </a>
+    </nav>
+  </header>
+
+  <div class="containeer">
+    <div class="left-div">
+      <h1 style="color: #005691;">
+        <center>Личная информация</center>
+      </h1>
+      <center>
+        <img src="icons/pfp.jpeg" alt="Фото профиля">
+      </center>
+
+      <div id="text-container1">
+        <span style="color: #005691; font-size: 25px; font-weight: bold;">Имя</span>
+        <button class="changebutton" id="edit-btn1" onclick="editText('text-content1', 'edit-btn1')">✎</button>
+        <p id="text-content1" style="font-size: 20px;">Зубенко Михаил</p>
+        <hr style="border: 1px solid #AFD3E2;">
+      </div>
+
+      <div id="text-container2">
+        <span style="color: #005691; font-size: 25px; font-weight: bold;">Почта</span>
+        <button class="changebutton" id="edit-btn2" onclick="editText('text-content2', 'edit-btn2')">✎</button>
+        <p id="text-content2" style="font-size: 20px;">yobannirotetogocasino@gmail.com</p>
+        <hr style="border: 1px solid #AFD3E2;">
+      </div>
+
+      <div id="text-container3">
+        <span style="color: #005691; font-size: 25px; font-weight: bold;">Телефон</span>
+        <button class="changebutton" id="edit-btn3" onclick="editText('text-content3', 'edit-btn3')">✎</button>
+        <p id="text-content3" style="font-size: 20px;">8 800 222 35 35</p>
+      </div>
+      <br>
+    </div>
+
+    <div class="right-divs">
+      <div class="top-div">
+        <h1 style="color: #005691;">
+          <center>Мои Пожертвования</center>
+        </h1>
+        <ul>
+          <span style="color: #005691; font-size: 20px;">"Солнышко"</span>         
+          <span style="font-size: 20px;"> - 19 900 тг</span>
+          <br>
+          <span style="color: #005691; font-size: 20px;">"Асем"</span>         
+          <span style="font-size: 20px;"> - 12 700 тг</span>
+          <br>
+          <span style="color: #005691; font-size: 20px;">"Жанұя"</span>         
+          <span style="font-size: 20px;"> - 15 400 тг</span>
+          <br>
+          <span style="color: #005691; font-size: 20px;">SOS Детская деревня</span>         
+          <span style="font-size: 20px;"> - 17 100 тг</span>
+        </ul>
+      </div>
+      <div class="bottom-div">
+        <h1 style="color: #005691;">
+          <center>Активные Подписки</center>
+        </h1>
+        <ul>
+          <li><p style="font-size: 20px;"> Детский Дом "Солнышко"</p></li>   
+          <li><p style="font-size: 20px;"> Детский Дом "Жанұя"</p></li>   
+        </ul>
+        <br>
+        <center> 
+          <button id="popupButton" class="header-button" onclick="togglePopup()">Управление Подписками</button>
+        </center>
+      </div>
+    </div>
+  </div>
+  
+  <a href="chat.html" style="text-decoration: none; color: white;">
+  <button style="position: relative; margin-left: 90%;" class="header-button">
+    Чаты
+  </button>
+</a>
+  <br><br>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" id="closeButton" onclick="togglePopup()">&times;</span>
+        <br>
+        <br>
+        <div class="subscription-container">
+          <div class="subscription-info">
+            <span class="organization-name">Детский Дом "Солнышко"</span>
+            <span class="subscription-duration">Осталось банковских списаний: 3</span>
+          </div>
+          <button class="cancel-button" onclick="cancelSubscription()">Отменить подписку</button>
+        </div>      
+        <hr style="border: 1px solid #AFD3E2;">
+        <div class="subscription-container">
+          <div class="subscription-info">
+            <span class="organization-name">Детский Дом "Жанұя"</span>
+            <span class="subscription-duration">Осталось банковских списаний: 2</span>
+          </div>
+          <button class="cancel-button" onclick="cancelSubscription()">Отменить подписку</button>
+        </div> 
+    </div>
+  </div>
+
+  <script src="script.js">
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>House of the Hearth</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2022.7"> 
+      <link rel="stylesheet" href="index.css">
+      <link rel="icon" type="image/png" href="logo/logo.png"/>
+      <style>
+        body {
+          background: linear-gradient(to right, transparent 0px, rgb(255, 255, 255) 55%),
+                      url("photo/kids.jpg") no-repeat center/cover;
+          margin: 0;
+        }
+      </style>
+      
+
+      
+</head>
+
+<body>
+  <header class="s-header">
+    <nav class="header-nav-wrap">
+      <p><img class="header-logo" src="logo/logoname.png" alt="Logo"></p>
+      <ul class="header-main-nav">
+        <li>
+          <button id="popupButton" class="header-button"><li>Войти</li></button>
+        </li>
+      </ul>
+    </nav>
+  </header>  
+  <div id="popup" class="popup">
+    <div class="popup-content defdiv">
+      <span class="close" id="closeButton">&times;</span>
+        <br>
+        <h1><center>Войти</center></h1>
+        <center>
+        <div id="verification_form">
+          <form id="phone_form"  method="post">
+              <label for="phone">Введите свой номер телефона:</label><br><br>
+              <input type="text" id="phone" name="phone" required><br><br>
+              <button class="header-button" type="button" onclick="showVerificationInput()">Получить код верификации</button>
+              <p>Нет аккаунта? <a href="Login.html">Зарегистрируйтесь!</a> </p>
+              <br><br>
+          </form>
+  
+          <form id="verification_code_form" style="display: none;" method="post">
+              <label for="verification_code">Введите код:</label><br><br>
+              <input type="text" id="verification_code" name="verification_code" required>
+              <br><br><br>
+              <a href="MainPage.html" class="header-button" type="submit">Войти</a>
+              <br><br>
+              <p>Нет аккаунта? <a href="Login.html">Зарегистрируйтесь!</a> </p>
+          </form>
+      </div>  
+        </center></form>
+        <br>
+    </div>
+  </div>
+<div class="OurProject">
+  <h1>Наш проект</h1>
+  <h3>Добро пожаловать в наше сообщество, посвященное поддержке детских домов и детей, нуждающихся в нашей заботе и внимании. Мы верим, что каждый ребенок заслуживает любви, ухода и возможности развиваться в безопасной и поддерживающей среде.</h3>
+  <h3>Наш сайт — это мост между сердцами тех, кто готов помогать, и детскими домами, которые нуждаются в вашей поддержке. Здесь вы найдете возможности не только оказать финансовую помощь, но и узнать, какие конкретные потребности есть у детских домов, чтобы ваше пожертвование могло принести максимальную пользу.</h3>
+  <h3>Мы стремимся создать место, где каждый, независимо от своих возможностей, может внести свой вклад в благополучие детей. Наша цель — поддержать детские дома в их стремлении обеспечить детей всем необходимым для их роста, развития и счастливой жизни.</h3>
+  <h3>Присоединяйтесь к нам сегодня, и вместе мы сможем сделать мир немного лучше для детей, которые нуждаются в нашей помощи и заботе. Вместе мы можем сделать больше! </h3>
+</div>
+<script src="script.js">
+</script> 
+</body>
+</html>
